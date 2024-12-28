@@ -1,0 +1,207 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+/* Header */
+header {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* File Upload */
+.file-upload {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.upload-label {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upload-label:hover {
+    background-color: #0056b3;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+/* PDF Controls */
+.pdf-controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.page-input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+/* Audio Controls */
+.audio-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.control-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.control-btn:disabled {
+    background-color: #adb5bd;
+    cursor: not-allowed;
+}
+
+.control-btn:hover:not(:disabled) {
+    background-color: #218838;
+}
+
+.voice-select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.rate-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.rate-control label {
+    font-size: 14px;
+    color: #212529;
+}
+
+#rateRange {
+    width: 100px;
+}
+
+/* Status Bar */
+.status-bar {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #212529;
+    text-align: center;
+}
+
+/* Progress Bar */
+.progress-bar {
+    width: 100%;
+    margin: 10px 0;
+    height: 10px;
+    border: none;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar::-webkit-progress-bar {
+    background-color: #e9ecef;
+}
+
+.progress-bar::-webkit-progress-value {
+    background-color: #28a745;
+}
+
+/* PDF Viewer */
+.pdf-viewer {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    min-height: 600px;
+    max-height: 800px;
+    background-color: #f1f1f1;
+    overflow: auto;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between pages */
+}
+
+/* Loading Message */
+.loading-message {
+    text-align: center;
+    color: #6c757d;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.status-indicator {
+    text-align: center;
+    color: #343a40;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #343a40;
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
